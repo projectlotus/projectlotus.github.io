@@ -8,99 +8,87 @@
     <meta name="viewport" content="width=360, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Project Lotus</title>
+    <title>TF2 SwapShop</title>
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="faa-animated.min.css">
+    <link href="css/tf2ss.min.css" rel="stylesheet">
       <link href="css/animate.min.css" rel="stylesheet">
-      <link rel="icon" href="http://i1378.photobucket.com/albums/ah86/Biscuit_090/Music%20Note_zpsgmfjxcnd.png">
+      <link rel="icon" href="img/tf2logo.png">
       <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
+    
+      <!-- Navigation -->
+    
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand lotus-hover" href="index.html" style="font-family: 'Source Sans Pro'; font-weight: 600;">Project Lotus 🌸</a>
+        <a class="navbar-brand teal-hover" href="index.html" style="font-family: 'Source Sans Pro'; font-weight: 600;">TF2 SwapShop <i class="fas fa-recycle" style="color: deepskyblue;"></i></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+              <a class="nav-link js-scroll-trigger" href="#page-top"><i class="fas fa-home icon-fs"></i> Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#events">Events<sup> <i class="fa fa-exclamation-circle faa-flash faa-slow animated" style="color: forestgreen; font-size: 15px;"></i></sup></a>
+              <a class="nav-link js-scroll-trigger" href="http://tf2swapshop.com/forum/index.php"><i class="fas fa-calendar-alt icon-fs"></i> Forum</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#portfolio">Portfolio</a>
-            </li>
-              <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#about">About Us <sup> <i class="fa fa-code faa-flash faa-slow animated" style="color: dodgerblue; font-size: 15px;"></i></sup></a>
-            </li>
-              <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="donate.html">Donate <sup> <i class="fa fa-code faa-flash faa-slow animated" style="color: dodgerblue; font-size: 15px;"></i></sup></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-shopping-cart icon-fs"></i> Buy Items
+                </a>
             </li>
               <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="staff.html">Staff List<sup> <i class="fa fa-code faa-flash faa-slow animated" style="color: dodgerblue; font-size: 15px;"></i><i class="far fa-circle faa-burst faa-slow animated" style="color: red; font-size: 15px; margin-left: -16px;"></i></sup></a>
+              <a class="nav-link js-scroll-trigger" href="http://tf2swapshop.com/sourcebans/"><i class="fas fa-gavel icon-fs"></i> SourceBans</a>
             </li>
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="donate.html"><i class="fas fa-heart icon-fs" style="color: mediumvioletred;"></i> Donate</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" style="justify-content: center;"></a>
+              </li>
+              <li class="nav-item" onload="myTimer()" style="justify-content: center; color: white; opacity: 0.6; padding: 0;">
+              <a class="nav-link" id="clock"></a>
+              </li>
           </ul>
         </div>
       </div>
     </nav>
+    
+      <!--------------------- Body ----------------------->
+    
   <body id="page-top">
-    <!-- Navigation
-    <a class="menu-toggle rounded" href="#">
-      <i class="fa fa-bars"></i>
-    </a>
-    <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#page-top">Home</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#events">Events</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#store">Online Store</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#about">About Us</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- Header -->
+      
+      <!-- Header -->
+      
     <header class="masthead d-flex callout" style="background-attachment: fixed;">
       <div class="container text-center my-auto">
-          <h1 id="hover" class="mb-1 wow slideInUp" data-wow-delay="500ms" style="font-size: 60px; color:white;">Welcome to <a style="color: lightpink;">Project Lotus 🌸</a></h1>
+          <h1 class="mb-1 wow slideInUp" data-wow-delay="500ms" style="font-size: 60px; color:white;">Welcome to <a style="color: dodgerblue;">TF2 SwapShop 🎮</a></h1>
         <h3 style="padding-bottom: 25px; padding-top: 10px;">
-            <div class="wow flipInX" style="display: inline-block; color: white;" data-wow-delay="1900ms" data-wow-duration="1500ms">Singing -
+            <div class="wow flipInX" style="display: inline-block; color: white;" data-wow-delay="1900ms" data-wow-duration="1500ms">TF2 -
             </div>
-            <div class="wow flipInX" style="display: inline-block; color: white;" data-wow-delay="2000ms" data-wow-duration="1500ms">Rapping -
+            <div class="wow flipInX" style="display: inline-block; color: white;" data-wow-delay="2000ms" data-wow-duration="1500ms">CS:GO -
             </div>
-            <div class="wow flipInX" style="display: inline-block; color: white;" data-wow-delay="2100ms" data-wow-duration="1500ms">Weed -
+            <div class="wow flipInX" style="display: inline-block; color: white;" data-wow-delay="2100ms" data-wow-duration="1500ms">Community -
             </div>
-            <div class="wow flipInX" style="display: inline-block; color: white;" data-wow-delay="2200ms" data-wow-duration="1500ms">Chill
+            <div class="wow flipInX" style="display: inline-block; color: white;" data-wow-delay="2200ms" data-wow-duration="1500ms">Gaming
             </div>
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger wow fadeInUp box2" href="#events" style="background-color: #5e01d0; font-size: 20px;" data-wow-delay="2300ms">Let's Get Started!</a>
           <center>
-              <div class="container">
-          <div class="alert alert-info animated shake" style="margin-top: 1.3em; opacity: 0.8; width: 85%;">
-          <button type="button" class="close" data-dismiss="alert">×</button>
-              <strong>Hey there!</strong> This website is currently under construction;<u>please review the information provided below before continuing.</u><br>The '<i class="fa fa-exclamation-circle faa-flash faa-slow animated" style="color: forestgreen;"></i>' symbol indicates new content made available since <strong>2/14/18</strong>.<br> The '<i class="fa fa-code faa-flash faa-slow animated" style="color: dodgerblue"></i>' symbol indicates a page that is currently under construction.<br> The '<i class="far fa-circle faa-flash faa-slow animated" style="color: red;"></i>' symbol indicates content that has been recently updated.
-        </div>
-        </div>
+          <div class="row" style="justify-content: center;">
+              <a class="btn btn-primary btn-xl js-scroll-trigger box2 wow fadeInUp" href="#events" style="font-size: 22px;" data-wow-delay="2300ms">Visit Our Forum 📋</a>
+          </div>
           </center>
       </div>
     </header>
-    <!-- Events Section -->
-    <section class="content-section bg-primary text-white text-center" style="background-color: mediumpurple !important;" id="events">
+      
+      <!-- Section One -->
+      
+      <section class="content-section bg-primary text-white text-center" style="background-color: #4386d5 !important;" id="events">
       <div class="container" style="padding-bottom: 80px;">
         <div class="content-section-heading">
           <h3 class="text-secondary mb-0 wow flipInX" style="font-size: 25px; color: #333!important;">Information</h3>
@@ -108,199 +96,113 @@
         </div>
             <div class="row">
         <div class="col-lg-6 mb-4">
-          <div class="card h-100 wow fadeInUp box2" style="color: #222;">
-              <h3 class="card-header" style="color: black !important;"><a href="event1.html">Movie Night! 🎥</a></h3>
+          <div class="card h-100 box2" style="color: #222;">
+              <h3 class="card-header" style="color: teal;"><a href="http://tf2swapshop.com/forum/">Forum 📋</a></h3>
               
             <div class="card-body" style="padding: 42px;">
-                <div style="font-size: 28px;"><b>Join Us on ##/## and watch {movie}!</b></div>
-              <div class="font-italic">Click 'View Event' for details</div>
+                <div style="font-size: 28px;"><b>Apply for administration, view forum topics, etc.</b></div>
+              <div class="font-italic">Click 'Visit Forum' for details</div>
             </div>
             <ul class="list-group list-group-flush">              
               <li class="list-group-item">
-                <a href="event1.html" class="btn lotus-hover box2" style="background-color: #444; color: white;">View Event <sup> <i class="fa fa-exclamation-circle faa-flash faa-slow animated" style="color: forestgreen; font-size: 15px;"></i></sup></a>
+                <a href="#" class="btn teal-hover box2" style="background-color: #444; color: white;">Visit Forum </a>
               </li>
             </ul>
           </div>
         </div>
             <div class="col-lg-6 mb-4">
-          <div class="card h-100 wow fadeInUp box2" style="color: #222;">
-              <h3 class="card-header" style="color: teal;"><a href="event2.html">New CS:GO Server! 🎉</a></h3>
+          <div class="card h-100 box2" style="color: #222;">
+              <h3 class="card-header" style="color: teal;"><a href="#">Buy Items 🛒</a></h3>
             <div class="card-body" style="padding: 42px;">
-                <div style="font-size: 30px;"><b>Join us for the Grand Opening!</b></div>
-              <div class="font-italic">Click 'View Event' to be re-directed</div>
+                <div style="font-size: 30px;"><b>Visit our OP Skins page and buy items, skins and more</b></div>
+              <div class="font-italic">Click 'Buy Items' to be re-directed</div>
             </div>
             <ul class="list-group list-group-flush">              
               <li class="list-group-item">
-                <a href="event2.html" class="btn lotus-hover box2" style="background-color: #444; color: white;">View Event <sup> <i class="fa fa-exclamation-circle faa-flash faa-slow animated" style="color: forestgreen; font-size: 15px;"></i></sup></a>
+                <a href="https://opskins.com/?loc=shop_users_page&steamid=76561197964150063" class="btn box2 teal-hover" style="background-color: #444; color: white;">Buy Items</a>
               </li>
             </ul>
           </div>
         </div><div class="col-lg-6 mb-4">
-          <div class="card h-100 box2 wow fadeInUp" style="color: #222;">
-              <h3 class="card-header" style="color: teal;"><a href="event4.html">Talent Show Contest! 💎</a></h3>
+          <div class="card h-100 box2" style="color: #222;">
+              <h3 class="card-header" style="color: teal;"><a href="#">SourceBans ✅</a></h3>
             <div class="card-body" style="padding: 35px;">
-                <div style="font-size: 26px;"><b>Come share your talents and win prizes!</b></div>
+                <div style="font-size: 30px;"><b>Come see our final concert of 2017!</b></div>
               <div class="font-italic">Click 'View Event' for more details</div>
             </div>
             <ul class="list-group list-group-flush">              
               <li class="list-group-item">
-                <a href="event4.html" class="btn lotus-hover box2" style="background-color: #444; color: white;">View Event <sup> <i class="fa fa-exclamation-circle faa-flash faa-slow animated" style="color: forestgreen; font-size: 15px;"></i></sup></a>
+                <a href="winter-concert.html" class="btn teal-hover box2" style="background-color: #444; color: white;">View Event</a>
               </li>
             </ul>
           </div>
         </div><div class="col-lg-6 mb-4">
-          <div class="card h-100 wow fadeInUp box2" style="color: #222;">
-              <h3 class="card-header" style="color: teal;"><a href="event3.html">Bundle Giveaway! 🎁</a></h3>
+          <div class="card h-100 box2" style="color: #222;">
+              <h3 class="card-header" style="color: teal;"><a href="#">Discord <i class="fab fa-discord" style="color: rebeccapurple;"></i></a></h3>
             <div class="card-body" style="padding: 30px;">
-                <div style="font-size: 30px;"><b>Participate in our first giveaway!</b></div>
-              <div class="font-italic">Click 'View Event' to be re-directed</div>
+                <div style="font-size: 30px;"><b>Join our Discord Server!</b></div>
+              <div class="font-italic">Click 'Join Discord' to be re-directed</div>
             </div>
             <ul class="list-group list-group-flush">              
               <li class="list-group-item" >
-                <a href="event3.html" class="btn lotus-hover box2" style="background-color: #444; color: white;">View Event <sup> <i class="fa fa-exclamation-circle faa-flash faa-slow animated" style="color: forestgreen; font-size: 15px;"></i></sup></a>
+                <a href="spring-concert.html" class="btn teal-hover box2" style="background-color: #444; color: white;">Join Discord</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-          <a class="btn btn-primary btn-xl js-scroll-trigger box2" href="#portfolio">Check Out Our Portfolio</a>
         </div>
     </section>
-      <!-- Store Section -->
-    <section class="content-section bg-primary1 text-white text-center" id="portfolio">
-      <div class="container text-center my-auto">
-        <div class="content-section-heading">
-          <h3 class="text-secondary mb-0 wow fadeInUp" style="font-size: 30px; color: teal;" data-wow-duration="400ms" data-wow-delay="500ms">information</h3>
-          <h2 class="mb-5 wow fadeInUp" style="font-size: 65px;" data-wow-duration="400ms" data-wow-delay="500ms">Our Portfolio 📰</h2>
-        </div>
-          <div class="col-lg-10 container">
-          <div id="carouselExampleIndicators" class="carousel slide my-4 wow fadeInUp" data-wow-delay="400ms" data-ride="carousel" data-wow-duration="500ms">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <img class="d-block img-fluid" src="img/pexels1.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block img-fluid" src="img/pexels2.png">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block img-fluid" src="img/pexels3.png" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>              
-              <div class="row">
-        <div class="col-lg-6 mb-4 box2">
-          <div class="card h-100 wow fadeInUp" style="color: #222;">
-            <h3 class="card-header" style="color: mediumpurple;">View Staff Page 💼</h3>
-              <li class="list-group-item" style="background-color: #444;"><img class="card-img-top" src="https://cdn.dribbble.com/users/285475/screenshots/2863164/anya-hindmarch2.gif" alt=""></li>
-            <div class="card-body">
-              <div class="display-4" style="font-size: 50px;">Staff List</div>
-                <div class="font-italic">Click <b>'Staff Page'</b> to be re-directed</div>
-            </div>
-            <ul class="list-group list-group-flush">              
-              <li class="list-group-item">
-                <a href="staff.html" class="btn lotus-hover box2" style="background-color: #444; color: white;">Staff Page <sup> <i class="fa fa-code faa-flash animated faa-slow" style="color: dodgerblue; font-size: 13px;"></i></sup></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-            <div class="col-lg-6 mb-4 box2">
-          <div class="card h-100 wow fadeInUp" style="color: #222;">
-            <h3 class="card-header" style="color: mediumpurple;">View Events Page 📋</h3>
-              <li class="list-group-item" style="background-color: #444;"><img class="card-img-top" src="https://cdn.dribbble.com/users/398490/screenshots/3124841/coffee-dribbble.gif" alt=""></li>
-            <div class="card-body">
-              <div class="display-4" style="font-size: 50px;">imworkingonit</div>
-                <div class="font-italic">Click <b>'View Events'</b> to be re-directed</div>
-            </div>
-            <ul class="list-group list-group-flush">              
-              <li class="list-group-item">
-                <a href="#" class="btn lotus-hover box2" style="background-color: #444; color: white;">View Events <sup> <i class="fa fa-code faa-flash faa-slow animated" style="color: dodgerblue; font-size: 15px;"></i><i class="far fa-circle faa-burst faa-slow animated" style="color: red; font-size: 15px; margin-left: -16px;"></i></sup></a>
-              </li>
-            </ul>
-          </div>
-        </div><div class="col-lg-6 mb-4 box2">
-          <div class="card h-100 wow fadeInUp" style="color: #222;">
-              <h3 class="card-header lotus-hover" style="color: mediumpurple;">Join Our Discord Server 🌸</h3>
-              <li class="list-group-item" style="background-color: #444"><img class="card-img-top" src="img/discordanim.gif" alt=""></li>
-            <div class="card-body">
-              <div class="display-4" style="font-size: 50px;">Project Lotus Discord <i class="far fa-thumbs-up" style="font-size: 40px; margin-bottom: 4px; color: royalblue;"></i></div>
-                <div class="font-italic">Click <b>'Join Now'</b> to join our <b style="color: purple;">Discord</b> server</div>
-            </div>
-            <ul class="list-group list-group-flush">              
-              <li class="list-group-item">
-                <a href="https://discord.gg/r8sT2cn" class="btn lotus-hover box2" style="background-color: #444; color: white;">Join Now <i class="fa fa-sign-in-alt" style="color: teal;"></i><i class="far fa-circle faa-burst faa-slow animated" style="color: red; font-size: 15px; margin-left: -14px;"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div><div class="col-lg-6 mb-4 box2">
-          <div class="card h-100 wow fadeInUp" style="color: #222;">
-            <h3 class="card-header lotus-hover" style="color: mediumpurple;">Donate 💖</h3>
-              <li class="list-group-item" style="background-color: #444"><img class="card-img-top" src="https://cdn.dribbble.com/users/398490/screenshots/3456519/coin.gif" alt=""></li>
-            <div class="card-body">
-              <div class="display-4" style="font-size: 50px;">$5-</div>
-                <div class="font-italic">Click <b>'Donation Page'</b> to be re-directed</div>
-            </div>
-            <ul class="list-group list-group-flush">              
-              <li class="list-group-item">
-                <a href="donate.html" class="btn lotus-hover box2" style="background-color: #444; color: white;">Donation Page <sup> <i class="fa fa-code faa-flash faa-slow animated" style="color: dodgerblue; font-size: 15px;"></i><i class="far fa-circle faa-burst faa-slow animated" style="color: red; font-size: 15px; margin-left: -16px;"></i></sup></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-          </div>
-        </div>
-      </section>
+      
     <!-- Footer -->
+      
     <footer class="footer text-center" style="background-color: #222;">
       <div class="container">
         <ul class="list-inline mb-5">
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3 box2" href="https://discord.gg/r8sT2cn" target="_blank">
-              <i class="fab fa-discord"></i>
+            <a class="social-link rounded-circle text-white mr-3 box2" href="https://www.instagram.com/" target="_blank">
+              <i class="icon-social-instagram"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3 box2" href="#" target="_blank">
+            <a class="social-link rounded-circle text-white mr-3 box2" href="https://www.youtube.com/" target="_blank">
               <i class="icon-social-youtube"></i>
             </a>
           </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3 box2" href="https://github.com/projectlotus/" target="_blank">
+          <li class="list-inline-item rounded-circle">
+            <a class="social-link rounded-circle text-white box2" href="https://github.com/" target="_blank">
               <i class="icon-social-github"></i>
             </a>
           </li>
         </ul>
-        <p class="text-muted small mb-0" style="font-size: 22px;">Copyright &copy; Ryan Farruggia 👨‍🎓 2017 - 2018</p>
+        <p class="text-muted small mb-0" style="font-size: 18px;">Copyright &copy; Ryan Farruggia 👨‍🎓 2017 - 2018</p>
       </div>
     </footer>
+      
     <!-- Scroll to Top Button-->
+      
     <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-      <i class="fa fa-angle-up"></i><i class="far fa-circle faa-burst animated" style="color: red; font-size: 15px; margin-left: -12px;"></i>
+      <i class="fa fa-angle-up"></i>
     </a>
+      
     <!-- Bootstrap core JavaScript -->
+      
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      
     <!-- Plugin JavaScript -->
+      
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+      
     <!-- Custom scripts for this template -->
+      
     <script src="js/stylish-portfolio.min.js"></script>
+      
       <!-- wow.min.js -->
+      
     <script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+    <script>
+    new WOW().init();
+    </script>
   </body>
 </html>
