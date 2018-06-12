@@ -137,3 +137,7 @@ $(function() {
     });
   $('[href=#]').click(function(){return false});
 });
+
+function openNews() {
+	window.open ('experiment.html','_self',false)
+}
