@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600' rel='stylesheet' type='text/css'>
+	<link href="jquery.fullPage.min.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="animate.css" rel="stylesheet" type="text/css">
+	<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+* {
+  box-sizing: border-box;
+}
+
+.btn-6 {
+  color: #6ca08a;
+}
+.btn-6 span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #315646;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.btn-6:hover {
+  color: #d4e3dd;
+}
+.btn-6:hover span {
+  width: 225%;
+  height: 562.5px;
+}
+.btn-6:active {
+  background-color: #528f75;
+}
+		
+body {
+  background-image: linear-gradient(to right, #034378, #2d4e68);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.row {
+  max-width: 900px;
+  margin: 50px auto 0;
+}
+
+card {
+  float: left;
+  padding: 0 1.7rem;
+  width: 100%;
+}
+card .menu-content {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+card .menu-content::before, card .menu-content::after {
+  content: '';
+  display: table;
+}
+card .menu-content::after {
+  clear: both;
+}
+card .menu-content li {
+  display: inline-block;
+}
+card .menu-content a {
+  color: #fff;
+}
+card .menu-content span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: 'Open Sans';
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+card .wrapper {
+  background-color: #fff;
+  min-height: 540px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+card .wrapper:hover .data {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+card .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: translateY(calc(70px + 1em));
+          transform: translateY(calc(70px + 1em));
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+card .data .content {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+}
+card .author {
+  font-size: 12px;
+}
+card .title {
+  margin-top: 10px;
+}
+card .text {
+  height: 70px;
+  margin: 0;
+}
+card input[type='checkbox'] {
+  display: none;
+}
+card input[type='checkbox']:checked + .menu-content {
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+.example-2 .wrapper {
+  background: url(https://images.pexels.com/photos/761543/pexels-photo-761543.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center/cover no-repeat;
+}
+.example-2 .wrapper:hover .menu-content span {
+  -webkit-transform: translate(-50%, -10px);
+          transform: translate(-50%, -10px);
+  opacity: 1;
+}
+.example-2 .header {
+  color: #fff;
+  padding: 1em;
+}
+.example-2 .header::before, .example-2 .header::after {
+  content: '';
+  display: table;
+}
+.example-2 .header::after {
+  clear: both;
+}
+.example-2 .header .date {
+  float: left;
+  font-size: 15px;
+}
+.example-2 .menu-content {
+  float: right;
+}
+.example-2 .menu-content li {
+  margin: 0 5px;
+  position: relative;
+}
+.example-2 .menu-content span {
+  transition: all 0.3s;
+  opacity: 0;
+}
+.example-2 .data {
+  color: #fff;
+  -webkit-transform: translateY(calc(70px + 4em));
+          transform: translateY(calc(70px + 4em));
+}
+.example-2 .title a {
+  color: #fff;
+}
+.example-2 .button {
+  display: block;
+  width: 100px;
+  margin: 2em auto 1em;
+  text-align: center;
+  font-size: 13px;
+  color: turquoise;
+  line-height: 1;
+  position: relative;
+  font-weight: 700;
+}
+.example-2 .button::after {
+  content: '\2192';
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  transition: all 0.2s;
+}
+.example-2 .button:hover::after {
+  -webkit-transform: translate(10px, -50%);
+          transform: translate(10px, -50%);
+  opacity: 1;
+}
+	.spin {
+		-webkit-animation-name: spin;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 2000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 2000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+	}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+		
+</style>
+</head>
+<body>
+<div class="row">
+	<!-- Begin 'Fall Concert - 2018' card -->
+  <div class="example-2 card" style="padding-bottom: 30px;">
+    <div class="wrapper">
+      <div class="header">
+        <div class="date">
+          <span class="month">August</span>
+          <span class="day">28, 2018</span>
+        </div>
+        <ul class="menu-content">
+          <li><a href="#" class="far fa-eye" style="font-size: 165%;"><span>2</span></a></li>
+          <li><a href="#" class="fas fa-users" style="color: dodgerblue;font-size: 165%;"></a></li>
+        </ul>
+      </div>
+      <div class="data">
+        <div class="content">
+          <span class="author">Insert Author Here</span>
+          <h1 class="title"><a href="#">Fall Concert - 2018</a></h1>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum sem at consectetur porttitor. Sed semper posuere mi, non convallis lacus semper vel. Curabitur egestas massa metus, iaculis gravida massa tempor vel. Cras sit amet erat nec nisi convallis malesuada. Click 'Read More' for details.</p>
+          <a href="#" class="button">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<!-- End card -->
+	
+	<!-- Begin 'Tri-Tip Dinner Fundraiser' Card -->
+	<div class="example-2 card" style="padding-bottom: 30px;">
+    <div class="wrapper" style="background: url(https://images.pexels.com/photos/606540/pexels-photo-606540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=750);">
+      <div class="header">
+        <div class="date">
+          <span class="month">October</span>
+          <span class="day">15 -</span>
+					<span class="month">November</span>
+					<span class="day">18</span>
+					<span></span>
+        </div>
+        <ul class="menu-content">
+          <li><a href="#" class="far fa-eye" style="font-size: 165%;"><span>0</span></a></li>
+          <li><a href="#" class="fas fa-sync spin" style="color: lime;font-size: 150%;"></a></li>
+        </ul>
+      </div>
+      <div class="data">
+        <div class="content">
+          <span class="author">Insert Author Here</span>
+          <h1 class="title"><a href="#">Tri-Tip Dinner Fundraiser</a></h1>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum sem at consectetur porttitor. Sed semper posuere mi, non convallis lacus semper vel. Curabitur egestas massa metus, iaculis gravida massa tempor vel. Cras sit amet erat nec nisi convallis malesuada. Click 'Read More' for details.</p>
+          <a href="#" class="button">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<!-- End card -->
+	
+	<!-- Begin 'Winter Concert' Card -->
+	
+	<div class="example-2 card" style="padding-bottom: 30px;">
+    <div class="wrapper" style="background: url(https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=750);">
+      <div class="header">
+        <div class="date">
+          <span class="month">February</span>
+          <span class="day">23, 2019</span>
+					<span></span>
+        </div>
+        <ul class="menu-content">
+          <li><a href="#" class="far fa-eye" style="font-size: 165%;"><span>2</span></a></li>
+          <li style="top: -4px;"><a>Vocal</a></li>
+        </ul>
+      </div>
+      <div class="data">
+        <div class="content">
+          <span class="author">Insert Author Here</span>
+          <h1 class="title"><a href="#">Golden Empire</a></h1>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum sem at consectetur porttitor. Sed semper posuere mi, non convallis lacus semper vel. Curabitur egestas massa metus, iaculis gravida massa tempor vel. Cras sit amet erat nec nisi convallis malesuada. Click 'Read More' for details.</p>
+          <a href="#" class="button">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<!-- End card -->
+
+</div>
+</body>
+<script>
+	$(function() {  
+  $('.btn-6')
+    .on('mouseenter', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+			$(this).find('span').css({top:relY, left:relX})
+    })
+    .on('mouseout', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+    	$(this).find('span').css({top:relY, left:relX})
+    });
+  $('[href=#]').click(function(){return false});
+});
+	</script>
+</html>

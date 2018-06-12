@@ -13,66 +13,8 @@ $(document).ready(function() {
     };
   })(jQuery);
 
-  // input text for typing animation
-  $("#holder").writeText("Concert Choir & Vocal Ensemble");
-
   // initialize wow.js
   new WOW().init();
-	
-  // Push the body and the nav over by 285px over
-  var main = function() {
-    $(".fa-bars").click(function() {
-      $(".nav-screen").animate(
-        {
-          right: "0px"
-        },
-        200
-      );
-
-      $("body").animate(
-        {
-          right: "285px"
-        },
-        200
-      );
-    });
-
-    // Then push them back */
-    $(".fa-times").click(function() {
-      $(".nav-screen").animate(
-        {
-          right: "-285px"
-        },
-        200
-      );
-
-      $("body").animate(
-        {
-          right: "0px"
-        },
-        200
-      );
-    });
-
-    $(".nav-links a").click(function() {
-      $(".nav-screen").animate(
-        {
-          right: "-285px"
-        },
-        500
-      );
-
-      $("body").animate(
-        {
-          right: "0px"
-        },
-        500
-      );
-    });
-  };
-
-  $(document).ready(main);
-
   // initiate full page scroll
   $("#fullpage").fullpage({
     scrollBar: false,
@@ -178,4 +120,20 @@ $(document).ready(function() {
         });
     });
   });
+});
+$(function() {  
+  $('.btn-6')
+    .on('mouseenter', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+			$(this).find('span').css({top:relY, left:relX})
+    })
+    .on('mouseout', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+    	$(this).find('span').css({top:relY, left:relX})
+    });
+  $('[href=#]').click(function(){return false});
 });
