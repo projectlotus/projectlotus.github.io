@@ -8,6 +8,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="css/animate.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="css/heroic-features.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,11 +24,11 @@
     <i class="fa fa-bars fa-3x"></i>
     <div class="header-links">
       <ul style="margin-right:100px;">
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#news">News</a></li>
         <li><a href="#store">Store</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -77,9 +78,9 @@
       	<p class="animated fadeInUp" style="color:white;font-size:30px;">View recent events, fundraisers, etc.</p>
 			</div>
 			<div id="holder">
-				<div class="button">
+				<div class="button" onclick="openNews()">
     			<p class="btnText">Read News</p>
-    				<div class="btnTwo" onclick="openNews()">
+    				<div class="btnTwo">
 							<p class="btnText2">
 								<a class="far fa-newspaper" style="font-size: 140%;margin-top: -2px;"></a>
 							</p>
@@ -98,9 +99,9 @@
       	<p class="animated fadeInUp" style="color:white;font-size:30px;">Browse merchandise, fundraisers &amp; more</p>
 			</div>
 			<div id="holder">
-				<div class="button">
+				<div class="button" onclick="openStore()">
     			<p class="btnText">Start Shopping</p>
-    				<div class="btnTwo" onclick="openNews()">
+    				<div class="btnTwo">
 							<p class="btnText2">
 								<a class="fas fa-shopping-cart" style="font-size: 140%;margin-top: -2px;"></a>
 							</p>
@@ -116,12 +117,12 @@
     <div id="about" class="section" data-anchor="skills" style="background-color: #333;">
       <div class="content">
 				<h1 class="animated fadeInDown" style="font-size: 50px;color:lightseagreen;">About Us</h1>
-      	<p class="animated fadeInUp" style="color:white;font-size:27px;">Read about our group's achievements, performances and more.</p>
+      	<p class="animated fadeInUp" style="color:white;font-size:27px;">Read about our group's achievements, where to find us, and more.</p>
 			</div>
 			<div id="holder">
-				<div class="button">
+				<div class="button" onclick="openAbout()">
     			<p class="btnText">Learn More</p>
-    				<div class="btnTwo" onclick="openNews()">
+    				<div class="btnTwo">
 							<p class="btnText2">
 								<a class="fa fa-info-circle" style="font-size: 140%;margin-top: -2px;"></a>
 							</p>
@@ -135,7 +136,7 @@
     <!-- BEGIN footer -->
 
     <div id="contact" class="section fp-auto-height">
-      <div class="footer">
+      <div class="footer" style="height: 120px;">
         <p>CONTACT DEVELOPER</p>
         <div class="social-links">
           <span><a href="" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></span>

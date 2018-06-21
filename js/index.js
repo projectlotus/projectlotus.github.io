@@ -139,5 +139,11 @@ $(function() {
 });
 
 function openNews() {
-	window.open ('experiment.html','_self',false)
+	window.open ('news.html','_self',false)
+}
+function openStore() {
+	window.open ('store.html','_self',false)
+}
+function openAbout() {
+	window.open ('about.html','_self',false)
 }
