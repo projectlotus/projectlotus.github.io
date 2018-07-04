@@ -1,6 +1,43 @@
   /* general styles */
-html {
+	html {
 	overflow: hidden !important;
+	}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 5em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+	content: 'Show Details';
+	text-transform: none;
+	justify-content: center;
+	text-align: center;
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Hide Details';
+	text-transform: none;
+	justify-content: center;
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 2;
+	color: white;
 }
 
   body {

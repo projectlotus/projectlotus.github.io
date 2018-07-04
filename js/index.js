@@ -43,8 +43,8 @@ $(document).ready(function() {
   $(document).on("click", "#contact", function() {
     $.fn.fullpage.moveTo(4);
   });
-
-  // smooth scrolling
+ 
+  // smooth scrolling 
   $(function() {
     $("a[href*=#]:not([href=#])").click(function() {
       if (
