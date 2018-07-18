@@ -1,4 +1,4 @@
-/*-----------------------------------------------------------------------------------
+b/*-----------------------------------------------------------------------------------
 Template Name: New HTML5 Template,
 Template URI: http://www.themectg.com
 Description: This is html5 template
@@ -650,7 +650,7 @@ input:-webkit-autofill:focus {
 ***/
 
 .price-area {
-    background: url('images/parallax-6.jpg') no-repeat scroll center center / cover
+    background: url('https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat scroll center center / cover
 }
 
 .price-table h3 {
@@ -1122,4 +1122,20 @@ preloader
 #bdr-btm:hover:after {
   width: 50%;
   background: turquoise;
+}
+@media screen and (max-width: 414px) {
+	#home-page {
+		height: 100%;
+	}
+	#about-page {
+		height: 120% !important;
+	}
+	#hideContact {
+		visibility: hidden;
+		display: none;
+	}
+	#contact-page {
+		height: 15% !important;
+		padding-top: 20px;
+	}
 }
