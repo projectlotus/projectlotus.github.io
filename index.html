@@ -30,9 +30,12 @@
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
-<body data-spy="scroll" data-target="#primary-menu">
-
+	
+	
+<body data-spy="scroll" data-target="#primary-menu" onload="typeWriter()">
+	
+	
+		<!--Preloader-->
     <div class="preloader">
         <div class="sk-folding-cube">
             <div class="sk-cube1 sk-cube"></div>
@@ -41,6 +44,7 @@
             <div class="sk-cube3 sk-cube"></div>
         </div>
     </div>
+		<!--Preloader/-->
 	
 	
     <!--Mainmenu-area-->
@@ -74,28 +78,44 @@
     </div>
     <!--Mainmenu-area/-->
 
-
+	
     <!--Header-area-->
-    <header class="header-area overlay full-height relative v-center" id="home-page">
+    <header onload="typeWriter()" class="header-area overlay full-height relative v-center" id="home-page">
         <div class="absolute angle-bg"></div>
         <div class="container">
             <div class="row v-center">
                 <div class="col-xs-12 col-md-7 header-text">
                     <h1 style="font-size: 350%" class="wow fadeInDownBig">Sheldon Choirs</h1>
-                    <p style="font-size: 115%;" class="wow fadeInUpBig">Welcome to our new website! We have been anticipating and developing a ton of fresh, new stuff for you to enjoy! Please take some time to explore all the new features we have available, and be sure to contact us if you experience any issues.</p>
-                    <a href="#" class="button white hover-eft">Watch video</a>
+                    <p style="font-size: 115%;" id="demo"></p>
+									<a class="button white hover-eft" href="#openModal">Information<i class="fa fa-info-circle" style="font-size: 100%;"></i></a>
+									<div id="openModal" class="modalbg">
+  									<div class="dialog">
+    									<a href="#close" title="Close" class="close">X</a>
+  										<h2 style="padding-top: 10px;color: black;">Welcome.</h2>
+											<p style="color: black;">While I have given general access to most areas of this site, some features remain unfinished and are a work in progress. Please feel free to explore what is currently available, as some drastic changes will occur. This message will continue to appear until August 15th, 2018.</p>
+											<p style="color: black;">Thanks for your patience in advance.</p>
+    									<p style="color: black;" class="fineprint">p.s. mobile users will experience some major differences for a little bit.</p>
+										</div>
+									</div>
                 </div>
             </div>
         </div>
-			<a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+			<a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" id="hideContact"></a>
     </header>
     <!--Header-area/-->
 
-
+	
     <!--Feature-area-->
     <section class="gray-bg section-padding" id="service-page">
         <div class="container">
-					<h1 style="text-align:center;font-size: 250%;margin-bottom: 20px;">Services</h1>
+					<div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center" style="color: black; ">
+                    <div class="page-title">
+                        <h2 style="text-transform: none; font-size: 40px;">Choir Services</h2>
+                        <p>Meet our team of talented leaders and inquire below for more information.</p>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-4">
 									<a href="news.html">
@@ -125,7 +145,7 @@
                         <div class="box-icon">
                             <img src="images/service-icon-1.png" alt="" style="border-radius: 10px;">
                         </div>
-                        <h4>About Us</h4>
+                        <h4>Events</h4>
                         <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
                     </div>
 									</a>
@@ -133,8 +153,10 @@
             </div>
         </div>
     </section>
+		<!--Feature-area/-->
 	
 	
+		<!--About-area-->
 		<section class="angle-bg overlay sky-bg section-padding price-area" id="about-page" style="height: 90%;">
         <div class="container">
             <div class="row">
@@ -156,7 +178,7 @@
                                     </div>
                                     <div class="col-xs-6 col-md-3">
                                         <div class="caption-photo one" data-animation="animated fadeInRight">
-                                            <img src="http://via.placeholder.com/350x450" alt="" style="border-radius: 10px;">
+                                            <img src="http://via.placeholder.com/250x350" alt="" style="border-radius: 10px;">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-md-3">
@@ -262,75 +284,77 @@
             </div>
         </div>
     </section>
+		<!--About-area/-->
 
-
+	
+		<!--Team-area-->
     <section class="section-padding gray-bg" id="team-page" style="background-color: #333">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center" style="color: white;">
                     <div class="page-title">
-                        <h2>Our Talented Team</h2>
+                        <h2 style="text-transform: none;">Our Talented Team</h2>
                         <p>Meet our team of talented leaders and inquire below for more information.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="single-team wow slideInRight">
+                    <div class="single-team">
                         <div class="team-photo">
-                            <img src="https://s4.sathyainfo.com/s/40b76d71c4424f9/img.jpeg" alt="">
+                            <img src="images/jake-smile2.jpg" alt="">
                         </div>
-                        <h4>first last</h4>
+                        <h4 style="text-transform: none;">First Last</h4>
                         <h6>Conductor</h6>
                         <ul class="social-menu">
                             <li><a href="#"><i class="ti-facebook"></i></a></li>
                             <li><a href="#"><i class="ti-twitter"></i></a></li>
-                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="#"><i style="font-size:115%;" class="fab fa-snapchat"></i></a></li>
                             <li><a href="#"><i class="ti-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="single-team wow slideInRight" data-wow-delay="150ms">
+                    <div class="single-team">
                         <div class="team-photo">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkPR_gjFUnPgLosi0jRF-uqt46W5VuUGc6qgdT4kd2Irfx4f_b" alt="">
+                            <img src="images/ashley2.jpg" alt="">
                         </div>
-                        <h4>first last</h4>
+                        <h4 style="text-transform: none;">First Last</h4>
                         <h6>President</h6>
                         <ul class="social-menu">
                             <li><a href="#"><i class="ti-facebook"></i></a></li>
                             <li><a href="#"><i class="ti-twitter"></i></a></li>
-                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="#"><i style="font-size:115%;" class="fab fa-snapchat"></i></a></li>
                             <li><a href="#"><i class="ti-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="single-team wow slideInRight" data-wow-delay="300ms">
+                    <div class="single-team">
                         <div class="team-photo">
-                            <img src="https://s4.sathyainfo.com/s/40b76d71c4424f9/img.jpeg" alt="">
+                            <img src="images/brittany-denim2.jpg" alt="">
                         </div>
-                        <h4>first last</h4>
+                        <h4 style="text-transform: none;">First Last</h4>
                         <h6>Tech Manager</h6>
                         <ul class="social-menu">
                             <li><a href="#"><i class="ti-facebook"></i></a></li>
                             <li><a href="#"><i class="ti-twitter"></i></a></li>
-                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="#"><i style="font-size:115%;" class="fab fa-snapchat"></i></a></li>
                             <li><a href="#"><i class="ti-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="single-team wow slideInRight" data-wow-delay="450ms">
+                    <div class="single-team">
                         <div class="team-photo">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkPR_gjFUnPgLosi0jRF-uqt46W5VuUGc6qgdT4kd2Irfx4f_b" alt="">
+                            <img src="images/anthony-tux2.jpg" alt="">
                         </div>
-                        <h4>first last</h4>
+                        <h4 style="text-transform: none;">First Last</h4>
                         <h6>Vice President</h6>
                         <ul class="social-menu">
                             <li><a href="#"><i class="ti-facebook"></i></a></li>
                             <li><a href="#"><i class="ti-twitter"></i></a></li>
-                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="#"><i style="font-size:115%;" class="fab fa-snapchat"></i></a></li>
                             <li><a href="#"><i class="ti-instagram"></i></a></li>
                         </ul>
                     </div>
@@ -338,8 +362,10 @@
             </div>
         </div>
     </section>
-
+		<!--Team-area/-->
   
+	
+		<!--Events-area-->
     <section class="section-padding gray-bg" id="events-page">
         <div class="container">
 					<div class="row">
@@ -399,8 +425,10 @@
             </div>
         </div>
     </section>
+		<!--Events-area/-->
 
-
+	
+		<!--Footer-area-->
     <footer class="footer-area relative sky-bg" id="contact-page" style="height: 95%;">
         <div class="absolute footer-bg"></div>
         <div class="footer-top" id="hideContact">
@@ -466,8 +494,9 @@
             </div>
         </div>
     </footer>
-
+		<!--Footer-area/-->
 	
+		
     <!--Vendor-JS-->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
@@ -480,6 +509,19 @@
     <script src="js/wow.min.js"></script>
     <!--Main-active-JS-->
     <script src="js/main.js"></script>
+		<script>
+	var i = 0;
+var txt = 'Welcome to our new website! We\'ve been preparing a ton of new and fresh stuff for you to enjoy, and we appreciate your patience as large aspects of this site are still under construction.';
+var speed = 10;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+	</script>
 </body>
 
 </html>
