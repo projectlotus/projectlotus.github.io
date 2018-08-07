@@ -1545,8 +1545,8 @@ preloader
    border-bottom-right-radius: 5px;
  }
 
- @media only screen and (max-width: 414px;) {
-   #remove {
+ @media only screen and (max-width: 600px;) {
+   .remove {
      display: none !important;
    }
  }
