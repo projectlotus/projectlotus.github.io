@@ -1100,8 +1100,11 @@ preloader
      display: none;
    }
    #contact-page {
-     height: 15% !important;
+     height: 50px !important;
      padding-top: 20px;
+     bottom:0;
+     width: 100%;
+     position:absolute;
    }
  }
 
