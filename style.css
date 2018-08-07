@@ -1496,7 +1496,7 @@ preloader
  }
 
  .box2 {
-   text-align: center;
+   text-align: left;
    -webkit-box-shadow: 0 0 0 0 #ffffff;
    box-shadow: 0 0 0 0 #ffffff;
    -webkit-transition: 0.3s;
@@ -1545,8 +1545,14 @@ preloader
    border-bottom-right-radius: 5px;
  }
 
- @media only screen and (max-width: 600px;) {
+ @media only screen and (max-width: 414px;) {
    .remove {
      display: none !important;
    }
  }
+
+@media only screen and (max-width: 414px;) {
+  .event-size {
+    width: 100% !important;
+  }
+}
