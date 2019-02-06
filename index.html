@@ -2,17 +2,25 @@
 <html class="no-js" lang="zxx">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112617768-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112617768-2');
+    </script>
     <meta charset="utf-8">
     <meta name="author" content="John Doe">
-    <meta name="description" content="">
+    <meta name="description" content="The Sheldon Choir - A highly established group of singers from Sheldon High School">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
     <title>SHS Choirs - Home</title>
     <!-- Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/svg" href="images/note.svg">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -36,7 +44,7 @@
 
 <body data-spy="scroll" data-target="#primary-menu" onload="typeWriter()">
 
-		<!--Preloader-->
+	<!--Preloader-->
     <div class="preloader">
         <div class="sk-folding-cube">
             <div class="sk-cube1 sk-cube"></div>
@@ -45,7 +53,7 @@
             <div class="sk-cube3 sk-cube"></div>
         </div>
     </div>
-		<!--Preloader/-->
+	<!--Preloader/-->
 
     <!--Mainmenu-area-->
     <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
@@ -65,12 +73,12 @@
             <nav class="collapse navbar-collapse" id="primary-menu" style="font-size: 18px;">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active questrial-font"><a href="#home-page">Home</a></li>
-                    <li><a href="#service-page" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 0ms">Services</a></li>
-                    <li><a href="#about-page" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 50ms">About</a></li>
-									  <li><a href="#events-page" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 100ms">Events</a></li>
-                    <li><a href="team.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 150ms">Team</a></li>
-									  <li><a href="store.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 200ms">Store</a></li>
-									  <li><a href="faq.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 250ms">FAQ</a></li>
+                    <li><a href="index.html#services-page" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 0ms">Services</a></li>
+                    <li><a href="about.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 50ms">About</a></li>
+                    <li><a href="team.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 100ms">Team</a></li>
+                    <li><a href="store.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 150ms">Store <i class="fas fa-wrench"></i></a></li>
+                    <li><a href="events.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 200ms">Events</a></li>
+					<li><a href="watch.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 250ms">Watch</a></li>
                 </ul>
             </nav>
         </div>
@@ -84,20 +92,13 @@
             <div class="row v-center">
                 <div class="col-xs-12 col-md-7 header-text">
                     <h1 style="font-size: 350%; font-family: Questrial;" class="wow fadeInDownBig">Sheldon Choirs</h1>
-                    <p style="font-size: 115%; font-family: Roboto;" id="demo"></p>
-									<a class="button white hover-eft" href="#openModal" style="font-family: Roboto; font-weight: 600;">Information<i class="fa fa-info-circle" style="font-size: 100%;"></i></a>
-									<div id="openModal" class="modalbg">
-  									<div class="dialog">
-    									<a href="#close" title="Close" class="close">X</a>
-  										<h2 style="padding-top: 15px; padding-bottom: 0;color: black; font-family: Questrial;">Welcome.</h2>
-											<p style="color: black; font-family: Roboto;">
-                        While I have given general access to most areas of this site, some features remain unfinished
-                        and are a work in progress. Please feel free to explore what is currently available,
-                        as some drastic changes will occur. This message will continue to appear until August 28th, 2018.</p>
-											<p style="color: black; font-family: Roboto;">Thanks for your patience in advance.</p>
-    									<p style="color: black; font-family: Roboto;" class="fineprint">p.s. mobile users will experience some major differences for a little bit.</p>
-										</div>
-									</div>
+                    <p class="wow slideInUp" style="font-size: 115%; font-family: Roboto;" id="demo">
+                        Welcome to our new website! 
+                        We appreciate your patience as some areas of this site remain under construction and some drastic changes may occur.</p>
+                    <a class="button white hover-eft" href="https://youtu.be/O8nMIHAD70Q" target="_blank" style="text-align: center;vertical-align: middle;font-family: Roboto; font-weight: 600; font-size: 20px;">
+                        Featured: 
+                        O Aula Nobilis
+                    <i class="fab fa-youtube" style="font-size: 150%;color: red; text-align: center; vertical-align: -3px;"></i></a>
                 </div>
             </div>
         </div>
@@ -106,7 +107,7 @@
     <!--Header-area/-->
 
     <!--Services-area-->
-    <section class="gray-bg section-padding test" id="service-page">
+    <section class="gray-bg section-padding test" id="services-page">
         <div class="container">
 					<div class="row">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
@@ -123,8 +124,8 @@
                         <div class="box-icon">
                             <img src="images/service-icon-3.png" alt="" style="border-radius: 10px;">
                         </div>
-                        <h4 style="font-family: Questrial;">Choir News</h4>
-                        <p style="font-family: Questrial;">Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
+                        <h4 style="font-family: Questrial;">London Payment Plan</h4>
+                        <p style="font-family: Questrial;">Hello Vocal Ensemble Families, We are asking for you to pay by the 17th as we have to send a credit card payment on the 18th...<br> <b>Click for more information.</b></p>
                     </div>
 									</a>
                 </div>
@@ -140,12 +141,12 @@
 									</a>
                 </div>
                 <div class="col-xs-12 col-sm-4">
-									<a href="#about-page">
+									<a href="events.html">
 										<div class="box bdr-btm">
                         <div class="box-icon">
                             <img src="images/service-icon-1.png" alt="" style="border-radius: 10px;">
                         </div>
-                        <h4 style="font-family: Questrial;"> Current Events</h4>
+                        <h4 style="font-family: Questrial;"> Upcoming Events</h4>
                         <p style="font-family: Questrial;">Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
                     </div>
 									</a>
@@ -153,209 +154,7 @@
             </div>
         </div>
     </section>
-		<!--Services-area/-->
-
-		<!--About-area-->
-		<section class="angle-bg section-padding" id="about-page" style="height: 1000px; background: #232526;
-      background: -webkit-linear-gradient(to right, #232526, #414345);
-      background: linear-gradient(to right, #232526, #414345);">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="caption_slide" class="carousel slide caption-slider" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active row">
-                                <div class="v-center">
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="caption-title" data-animation="animated fadeInUp">
-                                            <h2 class="questrial-font" style="color: lightseagreen;">Concert Choir</h2>
-                                        </div>
-                                        <div class="caption-desc" data-animation="animated fadeInUp">
-                                            <p class="questrial-font" style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                        </div>
-                                        <div class="caption-button" data-animation="animated fadeInUp">
-                                            <a href="#" class="button hover-eft questrial-font">Read more</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <div class="caption-photo one" data-animation="animated fadeInRight">
-                                            <img src="http://via.placeholder.com/250x350" alt="" style="border-radius: 10px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <div class="caption-photo two" data-animation="animated fadeInRight">
-                                            <img src="http://via.placeholder.com/250x350" alt="" style="border-radius: 10px;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item row">
-                                <div class="v-center">
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="caption-title" data-animation="animated fadeInUp">
-                                            <h2 class="questrial-font" style="color: lightseagreen;">Vocal Ensemble</h2>
-                                        </div>
-                                        <div class="caption-desc" data-animation="animated fadeInUp">
-                                            <p class="questrial-font" style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
-                                        </div>
-                                        <div class="caption-button" data-animation="animated fadeInUp">
-                                            <a href="#" class="button hover-eft questrial-font">Read more</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <div class="caption-photo one" data-animation="animated fadeInRight">
-                                            <img src="http://via.placeholder.com/350x350" alt="" style="border-radius: 10px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <div class="caption-photo two" data-animation="animated fadeInRight">
-                                            <img src="http://via.placeholder.com/250x350" alt="" style="border-radius: 10px;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item row">
-                                <div class="v-center">
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="caption-title" data-animation="animated fadeInUp">
-                                            <h2 class="questrial-font" style="color: lightseagreen;">Treble Choir</h2>
-                                        </div>
-                                        <div class="caption-desc" data-animation="animated fadeInUp">
-                                            <p class="questrial-font" style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
-                                        </div>
-                                        <div class="caption-button" data-animation="animated fadeInUp">
-                                            <a href="#" class="button hover-eft questrial-font">Read more</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <div class="caption-photo one" data-animation="animated fadeInRight">
-                                            <img src="http://via.placeholder.com/250x350" alt="" style="border-radius: 10px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <div class="caption-photo two" data-animation="animated fadeInRight">
-                                            <img src="http://via.placeholder.com/250x350" alt="" style="border-radius: 10px;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item row">
-                                <div class="v-center">
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="caption-title" data-animation="animated fadeInUp">
-                                            <h2 class="questrial-font" style="color: lightseagreen;">CRC Chorus</h2>
-                                        </div>
-                                        <div class="caption-desc" data-animation="animated fadeInUp">
-                                            <p class="questrial-font" style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
-                                        </div>
-                                        <div class="caption-button" data-animation="animated fadeInUp">
-                                            <a href="#" class="button hover-eft questrial-font" style="color: orange;">Read more</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <div class="caption-photo one" data-animation="animated fadeInRight">
-                                            <img src="http://via.placeholder.com/250x350" alt="" style="border-radius: 10px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-md-3">
-                                        <div class="caption-photo two" data-animation="animated fadeInRight">
-                                            <img src="http://via.placeholder.com/250x350" alt="" style="border-radius: 10px;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators caption-indector remove">
-                            <li style="color: lightseagreen;" data-target="#caption_slide" data-slide-to="0" class="active">
-                                <strong style="color: white;">Concert Choir </strong>82 Singers
-                            </li>
-                            <li style="color: lightseagreen;" data-target="#caption_slide" data-slide-to="1">
-                                <strong style="color: white;">Vocal Ensemble </strong>36 Singers
-                            </li>
-                            <li style="color: lightseagreen;" data-target="#caption_slide" data-slide-to="2">
-                                <strong style="color: white;">Treble Choir </strong>29 Singers
-                            </li>
-                            <li style="color: lightseagreen;" data-target="#caption_slide" data-slide-to="3">
-                                <strong style="color: white;">CRC Chorus </strong>20 Singers
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-		<!--About-area/-->
-
-		<!--Events-area-->
-    <section class="section-padding gray-bg" id="events-page">
-        <div class="container">
-          <div class="page-title" style="text-align: center;">
-              <h2 style="text-transform: none; font-size: 300%; font-family: Questrial;">Upcoming &amp; Recent Events</h2>
-              <p style="font-size: 20px;font-family: Roboto;">View recent and upcoming events.</p>
-          </div>
-          <div class="card-column container event-size" style="width: 100%;border-radius: 10px; margin-top: -30px;">
-
-
-
-              <article class="card container event-size" style="margin-bottom: 50px; width: 100%;">
-                  <section class="card-content event-card-style" style="border-radius: 10px;">
-                    <header class="card-header">
-                      <p class="card-subtitle" style="font-family: 'open sans' !important;color: orange; font-weight: 700">
-                        Performance
-                      </p>
-                        <h2 class="card-title" style="padding-bottom: 20px;">
-                          <a href="#">Fall Concert 2018</a>
-                        </h2>
-                    </header>
-                  <section class="card-body" style="border-radius: 10px;">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a sem pellentesque,
-                    dignissim nisl non, eleifend mi. Morbi congue blandit dignissim.
-                    Proin ac risus eu dui dignissim rhoncus ut in lorem.
-                    Nunc dapibus faucibus nunc, eget vehicula elit sagittis at.
-                    Vivamus eget nisl non sapien malesuada cursus.</p>
-                    <div class="post-footer">
-                    <p class="read-more" style="color: white;text-align:left;padding-bottom: 10px;">
-                      <i class="far fa-calendar-alt"></i> &nbsp;November 11, 2018 &nbsp;
-                      <i class="far fa-user"></i>&nbsp; First Last
-                    </p>
-                    </div>
-                  </section>
-                </section>
-              </article>
-
-
-
-             <article class="card container event-size" style="border-radius: 10px !important; width: 100%;">
-              <section class="card-content event-card-style" style="border-radius: 10px;">
-
-                <header class="card-header">
-                  <p class="card-subtitle" style="color:deepskyblue;font-weight:700;">
-                    Fundraiser
-                  </p>
-                  <h2 class="card-title" style="padding-bottom: 20px !important;">
-                    <a href="#">Tri-Tip Dinner Fundraiser</a>
-                </h2>
-                </header>
-                <section class="card-body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque a sem pellentesque, dignissim nisl non, eleifend mi.
-                    Morbi congue blandit dignissim. Proin ac risus eu dui dignissim rhoncus ut in lorem.
-                    Nunc dapibus faucibus nunc, eget vehicula elit sagittis at.
-                    Vivamus eget nisl non sapien malesuada cursus.</p>
-                    <div class="post-footer">
-                    <p class="read-more" style="color: white;text-align: left;">
-                      <i class="far fa-calendar-alt"></i> &nbsp;October 13 - November 9, 2018 &nbsp;
-                      <i class="far fa-user"></i>&nbsp; First Last
-                    </p>
-                    </div>
-                </section>
-              </section>
-              </article>
-        </div>
-        </div>
-      </section>
-		<!--Events-area/-->
+	<!--Services-area/-->
 
     <!--Footer-area-->
     <footer>
@@ -375,19 +174,6 @@
     <script src="js/wow.min.js"></script>
     <!--Main-active-JS-->
     <script src="js/main.js"></script>
-		<script>
-        	  var i = 0;
-            var txt = 'Welcome to our new website! We\'ve been preparing a ton of new and fresh stuff for you to enjoy, and we appreciate your patience as large aspects of this site are still under construction.';
-            var speed = 10;
-
-            function typeWriter() {
-              if (i < txt.length) {
-                document.getElementById("demo").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-              }
-            }
-	  </script>
 </body>
 
 </html>

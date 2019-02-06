@@ -55,13 +55,13 @@
           <!--Logo/-->
           <nav class="collapse navbar-collapse" id="primary-menu" style="font-size: 18px;">
               <ul class="nav navbar-nav navbar-right">
-                  <li><a href="index.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 0ms">Home</a></li>
-                  <li><a href="index.html#service-page" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 50ms">Services</a></li>
-                  <li><a href="index.html#about-page" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 100ms">About</a></li>
-                  <li><a href="index.html#events-page" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 150ms">Events</a></li>
-                  <li><a href="team.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 200ms">Team</a></li>
-                  <li class="active"><a href="store.html" class="questrial-font" style="animation-delay: 250ms">Store</a></li>
-                  <li><a href="faq.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 300ms">FAQ</a></li>
+                <li><a href="#home-page">Home</a></li>
+                <li><a href="index.html#services-page" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 0ms">Services</a></li>
+                <li><a href="about.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 50ms">About</a></li>
+                <li><a href="team.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 100ms">Team</a></li>
+                <li class="active"><a href="store.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 150ms">Store</a></li>
+                <li><a href="events.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 200ms">Events</a></li>
+                <li><a href="watch.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 250ms">Watch</a></li>
               </ul>
           </nav>
       </div>
@@ -75,60 +75,173 @@
 
     <section class="container">
       <div class="row" style="margin-top: 40px;">
-        <div class="col-md-8">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              Products
-            </div>
-              <div class="panel-body">
-                <div class="row">
-                  <!-- BEGIN PRODUCTS -->
-                  <div class="col-md-4 col-sm-6">
-                    <div class="sc-product-item thumbnail">
-                      <img data-name="product_image" src="http://placehold.it/250x150/2aabd2/333?text=Placehold" alt="...">
-                        <div class="caption">
-                          <h4 data-name="product_name">Product 1</h4>
-                            <p data-name="product_desc">Product details</p>
-                              <hr class="line">
-                                <div>
-                                  <div class="form-group">
-                                    <label>Size: </label>
-                                      <select name="product_size" class="form-control input-sm">
-                                        <option>S</option>
-                                        <option>M</option>
-                                        <option>L</option>
-                                      </select>
-                                  </div>
-                                    <div class="form-group">
-                                      <label>Color: </label>
-                                      <br/>
-                                        <label class="radio-inline">
-                                          <input type="radio" name="product_color" value="teal"> teal
-                                        </label>
-                                        <label class="radio-inline">
-                                          <input type="radio" name="product_color" value="white"> white
-                                        </label>
-                                        <label class="radio-inline">
-                                          <input type="radio" name="product_color" value="black"> black
-                                        </label>
-                                    </div>
-                                      <div class="form-group2">
-                                        <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+          <div class="col-md-8">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  Products
+                </div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <!-- BEGIN PRODUCTS -->
+                      <div class="col-md-4 col-sm-6">
+                        <div class="sc-product-item thumbnail">
+                          <img data-name="product_image" src="http://placehold.it/250x150/2aabd2/333?text=Product" alt="...">
+                            <div class="caption">
+                              <h4 data-name="product_name">Product 1</h4>
+                                <p data-name="product_desc">Product details</p>
+                                  <hr class="line">
+                                    <div>
+                                      <div class="form-group">
+                                        <label>Size: </label>
+                                          <select name="product_size" class="form-control input-sm">
+                                            <option>S</option>
+                                            <option>M</option>
+                                            <option>L</option>
+                                          </select>
                                       </div>
-                                      <strong class="price pull-left">$24.99</strong>
-                                        <input name="product_price" value="24.99" type="hidden" />
-                                        <input name="product_id" value="12" type="hidden" />
-                                        <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                                        <div class="form-group">
+                                          <label>Color: </label>
+                                          <br/>
+                                            <label class="radio-inline">
+                                              <input type="radio" name="product_color" value="teal"> teal
+                                            </label>
+                                            <label class="radio-inline">
+                                              <input type="radio" name="product_color" value="white"> white
+                                            </label>
+                                            <label class="radio-inline">
+                                              <input type="radio" name="product_color" value="black"> black
+                                            </label>
+                                        </div>
+                                          <div class="form-group2">
+                                            <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                          </div>
+                                          <strong class="price pull-left">$24.99</strong>
+                                            <input name="product_price" value="24.99" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                                        </div>
+                                            <div class="clearfix"></div>
+                                        </div>
                                     </div>
-                                        <div class="clearfix"></div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                  <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="http://placehold.it/250x150/2aabd2/333?text=Product" alt="...">
+                                      <div class="caption">
+                                        <h4 data-name="product_name">Product 2</h4>
+                                          <p data-name="product_desc">Product details</p>
+                                            <hr class="line">
+                                              <div>
+                                                <div class="form-group">
+                                                  <label>Size: </label>
+                                                    <select name="product_size" class="form-control input-sm">
+                                                      <option>S</option>
+                                                      <option>M</option>
+                                                      <option>L</option>
+                                                    </select>
+                                                </div>
+                                                  <div class="form-group">
+                                                    <label>Color: </label>
+                                                    <br/>
+                                                      <label class="radio-inline">
+                                                        <input type="radio" name="product_color" value="teal"> teal
+                                                      </label>
+                                                      <label class="radio-inline">
+                                                        <input type="radio" name="product_color" value="white"> white
+                                                      </label>
+                                                      <label class="radio-inline">
+                                                        <input type="radio" name="product_color" value="black"> black
+                                                      </label>
+                                                  </div>
+                                                    <div class="form-group2">
+                                                      <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                                    </div>
+                                                    <strong class="price pull-left">$24.99</strong>
+                                                      <input name="product_price" value="24.99" type="hidden" />
+                                                      <input name="product_id" value="12" type="hidden" />
+                                                      <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                                                  </div>
+                                                      <div class="clearfix"></div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-4 col-sm-6">
+                                            <div class="sc-product-item thumbnail">
+                                              <img data-name="product_image" src="http://placehold.it/250x150/2aabd2/333?text=Product" alt="...">
+                                                <div class="caption">
+                                                  <h4 data-name="product_name">Product 3</h4>
+                                                    <p data-name="product_desc">Product details</p>
+                                                      <hr class="line">
+                                                        <div>
+                                                          <div class="form-group">
+                                                            <label>Size: </label>
+                                                              <select name="product_size" class="form-control input-sm">
+                                                                <option>S</option>
+                                                                <option>M</option>
+                                                                <option>L</option>
+                                                              </select>
+                                                          </div>
+                                                            <div class="form-group">
+                                                              <label>Color: </label>
+                                                              <br/>
+                                                                <label class="radio-inline">
+                                                                  <input type="radio" name="product_color" value="teal"> teal
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                  <input type="radio" name="product_color" value="white"> white
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                  <input type="radio" name="product_color" value="black"> black
+                                                                </label>
+                                                            </div>
+                                                              <div class="form-group2">
+                                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                                              </div>
+                                                              <strong class="price pull-left">$24.99</strong>
+                                                                <input name="product_price" value="24.99" type="hidden" />
+                                                                <input name="product_id" value="12" type="hidden" />
+                                                                <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="col-md-4">
+                    <!-- Paypal Submit URL : https://www.paypal.com/cgi-bin/webscr -->
+                    <!-- Paypal Sandbox Submit URL: https://www.sandbox.paypal.com/cgi-bin/webscr -->
+    
+                    <!-- Paypal Cart submit form -->
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="POST">
+                        <!-- SmartCart element -->
+                        <div id="smartcart"></div>
+    
+                        <!-- Paypal required info, Please update based on your details -->
+                        <input name="business" value="rjfarruggia999@gmail.com" type="hidden">
+                        <input name="currency_code" value="USD" type="hidden">
+                        <input name="return" value="store.html" type="hidden">
+                        <input name="cancel_return" value="store.html" type="hidden">
+    
+                        <input name="cmd" value="_cart" type="hidden">
+                        <input name="upload" value="1" type="hidden">
+                    </form>
+                </aside>
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        Products
+                      </div>
+                        <div class="panel-body">
+                          <div class="row">
+                            <!-- BEGIN PRODUCTS -->
                             <div class="col-md-4 col-sm-6">
                               <div class="sc-product-item thumbnail">
-                                <img data-name="product_image" src="http://placehold.it/250x150/2aabd2/333?text=Placehold" alt="...">
+                                <img data-name="product_image" src="http://placehold.it/250x150/2aabd2/333?text=Product" alt="...">
                                   <div class="caption">
-                                    <h4 data-name="product_name">Product 2</h4>
+                                    <h4 data-name="product_name">Product 1</h4>
                                       <p data-name="product_desc">Product details</p>
                                         <hr class="line">
                                           <div>
@@ -167,9 +280,9 @@
                                       </div>
                                       <div class="col-md-4 col-sm-6">
                                         <div class="sc-product-item thumbnail">
-                                          <img data-name="product_image" src="http://placehold.it/250x150/2aabd2/333?text=Placehold" alt="...">
+                                          <img data-name="product_image" src="http://placehold.it/250x150/2aabd2/333?text=Product" alt="...">
                                             <div class="caption">
-                                              <h4 data-name="product_name">Product 3</h4>
+                                              <h4 data-name="product_name">Product 2</h4>
                                                 <p data-name="product_desc">Product details</p>
                                                   <hr class="line">
                                                     <div>
@@ -206,12 +319,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
                                                 <div class="col-md-4 col-sm-6">
                                                   <div class="sc-product-item thumbnail">
-                                                    <img data-name="product_image" src="http://placehold.it/250x150/2aabd2/333?text=Placehold" alt="...">
+                                                    <img data-name="product_image" src="http://placehold.it/250x150/2aabd2/333?text=Product" alt="...">
                                                       <div class="caption">
-                                                        <h4 data-name="product_name">Product 4</h4>
+                                                        <h4 data-name="product_name">Product 3</h4>
                                                           <p data-name="product_desc">Product details</p>
                                                             <hr class="line">
                                                               <div>
@@ -247,117 +359,13 @@
                                                                       <div class="clearfix"></div>
                                                                   </div>
                                                               </div>
-                                                          </div>
+                                                            </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
 
-                                                          <div class="col-md-4 col-sm-6">
-                                                            <div class="sc-product-item thumbnail">
-                                                              <img data-name="product_image" src="http://placehold.it/250x150/2aabd2/333?text=Placehold" alt="...">
-                                                                <div class="caption">
-                                                                  <h4 data-name="product_name">Product 5</h4>
-                                                                    <p data-name="product_desc">Product details</p>
-                                                                      <hr class="line">
-                                                                        <div>
-                                                                          <div class="form-group">
-                                                                            <label>Size: </label>
-                                                                              <select name="product_size" class="form-control input-sm">
-                                                                                <option>S</option>
-                                                                                <option>M</option>
-                                                                                <option>L</option>
-                                                                              </select>
-                                                                          </div>
-                                                                            <div class="form-group">
-                                                                              <label>Color: </label>
-                                                                              <br/>
-                                                                                <label class="radio-inline">
-                                                                                  <input type="radio" name="product_color" value="teal"> teal
-                                                                                </label>
-                                                                                <label class="radio-inline">
-                                                                                  <input type="radio" name="product_color" value="white"> white
-                                                                                </label>
-                                                                                <label class="radio-inline">
-                                                                                  <input type="radio" name="product_color" value="black"> black
-                                                                                </label>
-                                                                            </div>
-                                                                              <div class="form-group2">
-                                                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
-                                                                              </div>
-                                                                              <strong class="price pull-left">$24.99</strong>
-                                                                                <input name="product_price" value="24.99" type="hidden" />
-                                                                                <input name="product_id" value="12" type="hidden" />
-                                                                                <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
-                                                                            </div>
-                                                                                <div class="clearfix"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
 
-                                                                    <div class="col-md-4 col-sm-6">
-                                                                      <div class="sc-product-item thumbnail">
-                                                                        <img data-name="product_image" src="http://placehold.it/250x150/2aabd2/333?text=Placehold" alt="...">
-                                                                          <div class="caption">
-                                                                            <h4 data-name="product_name">Product 6</h4>
-                                                                              <p data-name="product_desc">Product details</p>
-                                                                                <hr class="line">
-                                                                                  <div>
-                                                                                    <div class="form-group">
-                                                                                      <label>Size: </label>
-                                                                                        <select name="product_size" class="form-control input-sm">
-                                                                                          <option>S</option>
-                                                                                          <option>M</option>
-                                                                                          <option>L</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                      <div class="form-group">
-                                                                                        <label>Color: </label>
-                                                                                        <br/>
-                                                                                          <label class="radio-inline">
-                                                                                            <input type="radio" name="product_color" value="teal"> teal
-                                                                                          </label>
-                                                                                          <label class="radio-inline">
-                                                                                            <input type="radio" name="product_color" value="white"> white
-                                                                                          </label>
-                                                                                          <label class="radio-inline">
-                                                                                            <input type="radio" name="product_color" value="black"> black
-                                                                                          </label>
-                                                                                      </div>
-                                                                                        <div class="form-group2">
-                                                                                          <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
-                                                                                        </div>
-                                                                                        <strong class="price pull-left">$24.99</strong>
-                                                                                          <input name="product_price" value="24.99" type="hidden" />
-                                                                                          <input name="product_id" value="12" type="hidden" />
-                                                                                          <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
-                                                                                      </div>
-                                                                                          <div class="clearfix"></div>
-                                                                                      </div>
-                                                                                  </div>
-                                                                              </div>
-                            <!-- END PRODUCTS -->
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <aside class="col-md-4">
-                <!-- Paypal Submit URL : https://www.paypal.com/cgi-bin/webscr -->
-                <!-- Paypal Sandbox Submit URL: https://www.sandbox.paypal.com/cgi-bin/webscr -->
-
-                <!-- Paypal Cart submit form -->
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="POST">
-                    <!-- SmartCart element -->
-                    <div id="smartcart"></div>
-
-                    <!-- Paypal required info, Please update based on your details -->
-                    <input name="business" value="rjfarruggia999@gmail.com" type="hidden">
-                    <input name="currency_code" value="USD" type="hidden">
-                    <input name="return" value="store.html" type="hidden">
-                    <input name="cancel_return" value="store.html" type="hidden">
-
-                    <input name="cmd" value="_cart" type="hidden">
-                    <input name="upload" value="1" type="hidden">
-                </form>
-            </aside>
         </div>
 
         <!--Information Button-->

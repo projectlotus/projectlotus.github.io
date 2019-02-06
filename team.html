@@ -39,6 +39,21 @@
       background-color: aliceblue;
     }
 
+    .small1 {
+    height: 70px;
+    overflow:hidden;
+    color: black;
+    }
+
+    .text-hvr:hover {
+    color: white !important;
+    }
+
+    .big1 {
+    height: auto;
+    color: white;
+    }
+
     @media (min-width: 992px) {
       body {
         padding-top: 56px;
@@ -71,9 +86,8 @@
         background-color: #444;
         -webkit-transform: translateY(-5px);
         transform: translateY(-5px);
-        border-radius: 10px;
-        border: solid teal 2px;
         color: white;
+        border-radius: 10px;
     }
     .box3:hover span {
       color: lightseagreen;
@@ -118,13 +132,13 @@
         <!--Logo/-->
         <nav class="collapse navbar-collapse" id="primary-menu" style="font-size: 18px;">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 0ms">Home</a></li>
-                <li><a href="index.html#service-page" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 0ms">Services</a></li>
-                <li><a href="index.html#about-page" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 50ms">About</a></li>
-                <li><a href="index.html#events-page" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 100ms">Events</a></li>
-                <li class="active"><a href="team.html" class="questrial-font" style="animation-delay: 150ms">Team</a></li>
-                <li><a href="store.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 200ms">Store</a></li>
-                <li><a href="faq.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 250ms">FAQ</a></li>
+                <li><a href="#home-page">Home</a></li>
+                <li><a href="index.html#services-page" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 0ms">Services</a></li>
+                <li><a href="about.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 50ms">About</a></li>
+                <li class="active"><a href="team.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 100ms">Team</a></li>
+                <li><a href="store.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 150ms">Store</a></li>
+                <li><a href="events.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 200ms">Events</a></li>
+				<li><a href="watch.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 250ms">Watch</a></li>
             </ul>
         </nav>
     </div>
@@ -132,60 +146,149 @@
 <!--Mainmenu-area/-->
 
 <!--Teampage-area-->
-<section class="gray-bg section-padding test" id="service-page" style="height: 100%; background-color: aliceblue;">
+<section class="gray-bg section-padding test" id="service-page" style=" background-color: aliceblue;">
     <div class="container">
       <div class="row">
             <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                 <div class="page-title">
                     <h2 style="text-transform: none; font-size: 300%; font-family: Questrial !important;">Meet our Team</h2>
-                    <p style="font-size: 20px; font-family: Roboto">Meet our team of talented leaders.</p>
+                    <p style="font-size: 20px; font-family: Roboto">Meet our team of talented leaders</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-4 text-hvr">
               <a href="#">
                 <div class="box3 bdr-btm">
                     <div class="box-icon">
                         <img src="//placehold.it/250x150" alt="" style="border-radius: 10px;">
                     </div>
-                    <h4 class="name">First Last</h4>
+                    <h4 class="name">Sariah Bryce</h4>
                     <span style="font-family: Roboto;">President</span>
-                    <p style="font-family: Questrial;">Lorem ipsum dolor sit amet, consectet adop adipisicing elit,
-                      sed do eiusmod tepo raraincididunt ugt labore.</p>
+                    <p style="font-family: Questrial;"><i>No information given.</i></p>
                 </div>
               </a>
             </div>
-            <div class="col-xs-12 col-sm-4">
-              <a href="#">
-                <div class="box3 bdr-btm">
-                    <div class="box-icon">
-                        <img src="//placehold.it/250x150" alt="" style="border-radius: 10px;">
-                    </div>
-                    <h4 class="name">First Last</h4>
-                    <span style="font-family: Roboto;">Tech Manager</span>
-                    <p style="font-family: Questrial;">Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-              <a href="#">
-                <div class="box3 bdr-btm">
-                    <div class="box-icon">
-                        <img src="//placehold.it/250x150" alt="" style="border-radius: 10px;">
-                    </div>
-                    <h4 class="name">First Last</h4>
-                    <span style="font-family: Roboto;">Vice President</span>
-                    <p style="font-family: Questrial;">Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
-                </div>
-              </a>
-            </div>
+            <div class="col-xs-12 col-sm-4 text-hvr">
+                    <a href="#">
+                      <div class="box3 bdr-btm">
+                          <div class="box-icon">
+                              <img src="//placehold.it/250x150" alt="" style="border-radius: 10px;">
+                          </div>
+                          <h4 class="name">Thalia Reid</h4>
+                          <span style="font-family: Roboto;">Vice President</span>
+                          <p style="font-family: Questrial;"><i>
+                              I've been singing since the age of 5.
+                              Music's always been such an important part of my life and I don't know where I'd be without it.</i></p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 text-hvr">
+                        <a href="#">
+                          <div class="box3 bdr-btm">
+                              <div class="box-icon">
+                                  <img src="//placehold.it/250x150" alt="" style="border-radius: 10px;">
+                              </div>
+                              <h4 class="name">Bethany Nguyen</h4>
+                              <span style="font-family: Roboto;">Treasurer</span>
+                              <p style="font-family: Questrial;"><i>
+                                  Hi I'm Bethany, the Treasurer of the choir. 
+                                  I'm a junior at Sheldon and I've been in choir for 3 years.
+                                  I am also in the Biotech academy and other AP classes.
+                                  I love being in choir and meeting new people.</i></p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 text-hvr">
+                            <a href="#">
+                              <div class="box3 bdr-btm">
+                                  <div class="box-icon">
+                                      <img src="//placehold.it/250x150" alt="" style="border-radius: 10px;">
+                                  </div>
+                                  <h4 class="name">Miles McCain</h4>
+                                  <span style="font-family: Roboto;">Tech Manager</span>
+                                  <p style="font-family: Questrial;"><i>
+                                      My name is Miles Barraza-McCain and this is my second year in choir. 
+                                      I am the 'tech guy' on the choir board.
+                                      Our choir is full of people who share how unique they are through the music we sing.
+                                      This group started as strangers and has become a family.</i></p>
+                              </div>
+                            </a>
+                          </div>
+
+              <div class="col-xs-12 col-sm-4">
+                <a href="#">
+                  <div class="box3 bdr-btm">
+                      <div class="box-icon">
+                          <img src="//placehold.it/250x150" alt="" style="border-radius: 10px;">
+                      </div>
+                      <h4 class="name">Nancy Camarillo</h4>
+                      <span style="font-family: Roboto;">Publicity</span>
+                      <p style="font-family: Questrial;"><i>My name is Nancy Camarillo, I'm head of publicity, I am a senior with a big imagination and creative skills. Yes I can be extra.</i></p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-4 text-hvr">
+                    <a href="#">
+                      <div class="box3 bdr-btm">
+                          <div class="box-icon">
+                              <img src="//placehold.it/250x150" alt="" style="border-radius: 10px;">
+                          </div>
+                          <h4 class="name">Savannah Gomes & Anthony McBroom</h4>
+                          <span style="font-family: Roboto;">Uniforms</span>
+                          <p style="font-family: Questrial;"><i>
+                              My name is Savannah Gomes, I'm a senior and have been in choir for 3 years. 
+                              My name is Anthony McBroom, I'm a junior and this my first year in choir.
+                              We are co-presidents of uniforms. We work together to make sure everyone looks their best.</i></p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                        <a href="#">
+                          <div class="box3 bdr-btm">
+                              <div class="box-icon">
+                                  <img src="//placehold.it/250x150" alt="" style="border-radius: 10px;">
+                              </div>
+                              <h4 class="name">Brenna McBride</h4>
+                              <span style="font-family: Roboto;">Stage Manager</span>
+                              <p style="font-family: Questrial;"><i>
+                                  I'm Brenna McBride, a junior here at Sheldon High School and a lover of music. 
+                                  I am one of the stage managers/decorators for Sheldon Choirs. 
+                                  I love being here at school and singing with all these wonderful choir members and friends. 
+                                  The best part of being in vocal ensemble and concert choir is getting to be with amazing students, 
+                                  who have become my second family and are always there for me!</i></p>
+                          </div>
+                        </a>
+                      </div>
+              <div class="col-xs-12 col-sm-4">
+                <a href="#">
+                  <div class="box3 bdr-btm">
+                      <div class="box-icon">
+                          <img src="//placehold.it/250x150" alt="" style="border-radius: 10px;">
+                      </div>
+                      <h4 class="name">Sarah Wolff</h4>
+                      <span style="font-family: Roboto;">Front of House</span>
+                      <p style="font-family: Questrial;"><i>
+                          I am 17 years old and have been an avid vocalist all my life. 
+                          Having spent 3 years with Hebert, I have become more confident in my singing abilities and wish to share these abilities 
+                          and wish to share these abilities with others. 
+                          I hope that every concert, I can greet everyone with a smile and inspire them to do what they love and to share that gift with others.</i></p>
+                  </div>
+                </a>
+              </div>
         </div>
     </div>
 </section>
 <!--Teampage-area/-->
 
 </body>
+
+<!--Footer-area-->
+<footer>
+    <p>&copy; <a target="_blank" style="color: deepskyblue;" href="https://ryan-farruggia.github.io/">Ryan Farruggia</a> 2018-2019</p>
+</footer>
+<!--Footer-area/-->
+
 <script src="js/vendor/jquery-1.12.4.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <!--Plugin-JS-->
