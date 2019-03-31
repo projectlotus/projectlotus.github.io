@@ -233,3 +233,11 @@ button:hover, button:focus {
     animation-duration: 2000ms;
     animation-iteration-count: infinite;
   }
+  .join-btn {
+    background-color: transparent;
+    padding: 8px;
+  }
+  .join-btn:hover {
+    background-color: transparent;
+    border-bottom: transparent !important;
+  }
