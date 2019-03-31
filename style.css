@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .masthead {
     height: 100vh;
     min-height: 500px;
@@ -7,21 +10,17 @@
     -webkit-animation: gradient 30s ease infinite;
     -moz-animation: gradient 30s ease infinite;
     animation: gradient 30s ease infinite;
-    background: linear-gradient(224deg, #2197c3, #1b6ebf, #6646e8, #9732db, #bc32db);
+    background: linear-gradient(225deg, #2197c3, #1b6ebf, #6646e8, #9732db);
     background-size: 1000% 1000%;
 }
-
 .explore {
     background-color:transparent;
     border-width:2px;
     border-color:deepskyblue;
 }
-.explore:hover {
-    background-color:deepskyblue;
-    border-color:transparent;
-    
+.logo:hover {
+    opacity:0.7;
 }
-
 @-webkit-keyframes gradient {
     0%{background-position:0% 99%}
     50%{background-position:100% 2%}
@@ -37,3 +36,200 @@
     50%{background-position:100% 2%}
     100%{background-position:0% 99%}
 }
+.navbar li {
+  display: inline-block;
+  border-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.navbar li:hover, .navbar li:active {
+  border-width: 3px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: lightseagreen;
+  color: white !important;
+}
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.close:hover,
+.close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover) !important;
+}
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover, .offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.fill {
+  --color: #a972cb;
+  --hover: #cb72aa;
+}
+
+.pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+
+.close {
+  --color: #ff7f82;
+  --hover: #ffdc7f;
+}
+
+.raise {
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+
+.up {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+
+.slide {
+  --color: #66c88c !important;
+  --hover: #66c887 !important;
+}
+
+.offset {
+  --color: lightseagreen !important;
+  --hover: #9523ff !important;
+}
+
+button {
+  color: var(--color) !important;
+  transition: 0.25s !important;
+}
+button:hover, button:focus {
+  border-color: var(--hover) !important;
+  color: #fff !important;
+}
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #555;
+    color:white !important;
+  }
+  #section09 a {
+    padding-top: 80px;
+    position: absolute;
+    margin-top: 300px;
+    justify-content: center;
+    left: 48%;
+  }
+  #section09 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+  #section09 a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+  }
+  #section09 a span::after {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    content: '';
+    margin-left: -9px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+  .demo a {
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+    margin-top: 20px;
+  }
+  .demo a:hover {
+    opacity: .5;
+  }
+  @keyframes myPulse {
+      0% {opacity: 1}
+      10% {opacity: 0.9}
+      20% {opacity: 0.8}
+      30% {opacity: 0.7}
+      40% {opacity: 0.6}
+      50% {opacity: 0.5}
+      60% {opacity: 0.6}
+      70% {opacity: 0.7}
+      80% {opacity: 0.8}
+      90% {opacity: 0.9}
+      100% {opacity: 1}
+  }
+  .myPulse {
+    animation-name: myPulse;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+  }
