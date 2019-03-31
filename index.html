@@ -1,179 +1,91 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-
+<html>
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112617768-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-112617768-2');
-    </script>
-    <meta charset="utf-8">
-    <meta name="author" content="John Doe">
-    <meta name="description" content="The Sheldon Choir - A highly established group of singers from Sheldon High School">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>SHS Choirs - Home</title>
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/svg" href="images/note.svg">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <!-- Plugin-CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Main-Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-
-<body data-spy="scroll" data-target="#primary-menu" onload="typeWriter()">
-
-	<!--Preloader-->
-    <div class="preloader">
-        <div class="sk-folding-cube">
-            <div class="sk-cube1 sk-cube"></div>
-            <div class="sk-cube2 sk-cube"></div>
-            <div class="sk-cube4 sk-cube"></div>
-            <div class="sk-cube3 sk-cube"></div>
-        </div>
-    </div>
-	<!--Preloader/-->
-
-    <!--Mainmenu-area-->
-    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
-        <div class="container">
-            <!--Logo-->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="#home-page" class="navbar-brand logo">
-                    <h2 class="questrial-font" style="font-size: 30px"><i class="fas fa-music" style="font-size: 22px;"></i> shs choirs</h2>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="font-family:'Pacifico', cursive;font-size:30px !important;">ChillZone</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive" style="font-family: 'Lato', sans-serif;font-size:20px">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
                 </a>
-            </div>
-            <!--Logo/-->
-            <nav class="collapse navbar-collapse" id="primary-menu" style="font-size: 18px;">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active questrial-font"><a href="#home-page">Home</a></li>
-                    <li><a href="index.html#services-page" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 0ms">Services</a></li>
-                    <li><a href="about.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 50ms">About</a></li>
-                    <li><a href="team.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 100ms">Team</a></li>
-                    <li><a href="store.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 150ms">Store <i class="fas fa-wrench"></i></a></li>
-                    <li><a href="events.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 200ms">Events</a></li>
-					<li><a href="watch.html" class="animated slideInLeft nav-anim questrial-font" style="animation-delay: 250ms">Watch</a></li>
-                </ul>
-            </nav>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!--Mainmenu-area/-->
-
-    <!--Header-area-->
-    <header onload="typeWriter()" class="header-area overlay full-height relative v-center" id="home-page">
-        <div class="absolute angle-bg"></div>
-        <div class="container">
-            <div class="row v-center">
-                <div class="col-xs-12 col-md-7 header-text">
-                    <h1 style="font-size: 350%; font-family: Questrial;" class="wow fadeInDownBig">Sheldon Choirs</h1>
-                    <p class="wow slideInUp" style="font-size: 115%; font-family: Roboto;" id="demo">
-                        Welcome to our new website! 
-                        We appreciate your patience as some areas of this site remain under construction and some drastic changes may occur.</p>
-                    <a class="button white hover-eft" href="https://youtu.be/O8nMIHAD70Q" target="_blank" style="text-align: center;vertical-align: middle;font-family: Roboto; font-weight: 600; font-size: 20px;">
-                        Featured: 
-                        O Aula Nobilis
-                    <i class="fab fa-youtube" style="font-size: 150%;color: red; text-align: center; vertical-align: -3px;"></i></a>
-                </div>
-            </div>
+</nav>
+  <!-- Full Page Image Header with Vertically Centered Content -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+          <h1 class="font-weight-light wow fadeInDown" style="font-size:50px;color:rgb(245, 245, 245)">Welcome to ChillZone</h1>
+          <p class="lead wow fadeInUp" style="font-size:22px;color:rgb(230, 230, 230)">A Discord community of Epic Gamers 🎮</p>
+          <a class="btn btn-primary btn-lg explore wow zoomIn" data-wow-delay="500ms" href="#">Click to Join our Server »</a>
         </div>
-			<a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" id="hideContact"></a>
-    </header>
-    <!--Header-area/-->
-
-    <!--Services-area-->
-    <section class="gray-bg section-padding test" id="services-page">
-        <div class="container">
-					<div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2 style="text-transform: none; font-size: 300%; font-family: Questrial !important;">Choir Services</h2>
-                        <p style="font-size: 20px; font-family: Roboto">Explore recent news, browse merchandise, and more.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-									<a href="news.html">
-                    <div class="box bdr-btm">
-                        <div class="box-icon">
-                            <img src="images/service-icon-3.png" alt="" style="border-radius: 10px;">
-                        </div>
-                        <h4 style="font-family: Questrial;">London Payment Plan</h4>
-                        <p style="font-family: Questrial;">Hello Vocal Ensemble Families, We are asking for you to pay by the 17th as we have to send a credit card payment on the 18th...<br> <b>Click for more information.</b></p>
-                    </div>
-									</a>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-									<a href="store.html">
-                    <div class="box bdr-btm">
-                        <div class="box-icon">
-                            <img src="images/portfolio-icon-6.png" alt="" style="border-radius: 10px;">
-                        </div>
-                        <h4 style="font-family: Questrial;">Online Store</h4>
-                        <p style="font-family: Questrial;">Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
-                    </div>
-									</a>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-									<a href="events.html">
-										<div class="box bdr-btm">
-                        <div class="box-icon">
-                            <img src="images/service-icon-1.png" alt="" style="border-radius: 10px;">
-                        </div>
-                        <h4 style="font-family: Questrial;"> Upcoming Events</h4>
-                        <p style="font-family: Questrial;">Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
-                    </div>
-									</a>
-                </div>
-            </div>
-        </div>
-    </section>
-	<!--Services-area/-->
-
-    <!--Footer-area-->
-    <footer>
-      <p>&copy; <a target="_blank" style="color: deepskyblue;" href="https://ryan-farruggia.github.io/">Ryan Farruggia</a> 2018-2019</p>
-    </footer>
-    <!--Footer-area/-->
-
-    <!--Vendor-JS-->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <!--Plugin-JS-->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/contact-form.js"></script>
-    <script src="js/jquery.parallax-1.1.3.js"></script>
-    <script src="js/scrollUp.min.js"></script>
-    <script src="js/magnific-popup.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <!--Main-active-JS-->
-    <script src="js/main.js"></script>
+      </div>
+    </div>
+  </header>
+  <!-- Page Content -->
+  <section class="py-5">
+    <div class="container">
+      <div class="col-md-6 mb-5" style="float:right">
+            <h2><i class="fas fa-headphones-alt"></i> Music Bots</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+            <a class="btn btn-primary btn-lg" href="#">Explore Music Bots »</a>
+      </div>
+      <div class="col-md-6 mb-5" style="padding-bottom:30px">
+            <h2><i class="fas fa-landmark"></i> Rules</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+            <a class="btn btn-primary btn-lg" href="#">Read our Rules »</a>
+      </div>
+      <div class="col-md-6 mb-5" style="float:right">
+            <h2><i class="far fa-question-circle"></i> Frequently Asked Questions</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+            <a class="btn btn-primary btn-lg" href="#">Visit our FAQ »</a>
+      </div>
+      <div class="col-md-6 mb-5" style="padding-bottom:30px">
+            <h2><i class="fas fa-user-plus"></i> Become a Staff Member</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+            <a class="btn btn-primary btn-lg" href="#">Review Staffing Information »</a>
+      </div>
+    </div>
+  </section>
+  <script src="jquery-3.3.1.slim.min.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+  <script src="wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
 </body>
-
 </html>
