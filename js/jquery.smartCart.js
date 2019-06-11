@@ -1,15 +1,3 @@
-/*!
- * jQuery Smart Cart v3.0.1
- * The smart interactive jQuery Shopping Cart plugin with PayPal payment support
- * http://www.techlaboratory.net/smartcart
- *
- * Created by Dipu Raj
- * http://dipuraj.me
- *
- * Licensed under the terms of the MIT License
- * https://github.com/techlab/SmartCart/blob/master/LICENSE
- */
-
 ;(function ($, window, document, undefined) {
     "use strict";
     // Default options
