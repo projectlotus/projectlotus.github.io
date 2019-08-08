@@ -711,3 +711,9 @@ a {
   transform: scale(1.05);
   margin-right: 10px;
 }
+.rounded-img {
+  border-radius: 20px;
+  border-width: 5px;
+  border-color: hotpink;
+  border-style: solid;
+}
