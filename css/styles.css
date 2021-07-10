@@ -10879,6 +10879,7 @@ html {
 .bg-blue {
   /* background-color: rgb(80, 167, 170) !important; */
   background-color: #329de6 !important;
+  border-color: white;
 }
 
 .text-light {
