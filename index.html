@@ -1,59 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-    <link rel="canonical" href="https://getbootstrap.com/docs/3.3/examples/starter-template/">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Y Stem And Chess</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html">
+                    <img class="rounded-circle me-3" src="assets/favicon.ico" alt="..." />
+                      Y STEM and Chess Inc.
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="#">Play</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Lessons</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Mentoring</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Programs</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sign In</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                    <li><a class="dropdown-item" href="#">Register</a></li>
+                                    <li><a class="dropdown-item" href="#">Login</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header-->
+            <header class="bg-dark py-5">
+                <div class="container px-5" style="padding: 50px 0px;">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-5 fw-bolder text-white mb-2">Our Mission</h1>
+                                <p class="lead fw-normal text-light mb-4">
+                                  Empower underserved and at risk children an opportunity to pursue STEM careers and change their life trajectory.
+                                </p>
+                                <h1 class="display-5 fw-bolder text-white mb-2">What We Do</h1>
+                                <p class="lead fw-normal text-light mb-4">
+                                    Teaching underserved children chess, math, and computer science to empower them to pursue STEM majors/professions with the support of professionals.
+                                </p>
+                                <br>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Learn More</a>
+                                    <a class="btn btn-outline-light btn-lg px-4" href="#!">Donate</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                          <iframe width="400" height="315" src="https://www.youtube.com/embed/SBr0bGgddIc" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
 
-    <title>Starter Template for Bootstrap</title>
+                        
+                    </div>
+                </div>
+            </header>
+            <!-- Features -->
+            <section class="bg-light py-5">
+                <div class="container px-5">
+                    <div class="container">
+                        <h1 class="fw-bolder mb-0 text-center">Become a Mentor</h1>
+                        <div class="row justify-content-center" style="padding-top:40px;padding-bottom:30px;">
+                            <div class="col-sm-4" style="margin-right:40px;">
+                                <h4>Interested in making a difference?</h4>
+                                Y STEM and Chess Inc. (YSC) 
+                                is focused on resolving two current social problems, 
+                                by providing a unique 21st Century methodology to learning called "Mastery." 
+                                This approach focuses on how each individual learns best which helps spark
+                                curiosity and boost a child's progress in a learning environment.
+                                
+                            </div>
+                            <div class="col-sm-4">
+                                <h4>Our main focal points:</h4>
+                                The first focus is on our society’s unfulfilled need for students with a firm 
+                                learning foundation.
+                                The second and the primary focus of YSC is fulfilling those needs, by working with the children of our socially and 
+                                economically underserved population, to introduce and engage them in the world of STEM.
+                            </div>
+                        </div>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+            <section class="py-5" id="features">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5 mb-lg-0" style="margin-top:13%;">
+                            <h1 class="fw-bolder mb-0">Why Chess?</h1>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row gx-5 row-cols-1 row-cols-md-2">
+                                <div class="col mb-5 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                                        <i class="bi bi-lightning-charge"></i>
+                                    </div>
+                                    <h2 class="h5">Promotes Brain Growth</h2>
+                                    <p class="mb-0">Chess helps exercise both sides of the brain, greatly improves memory, raises IQ and test scores, and can even prevent Alzheimer's.</p>
+                                </div>
+                                <div class="col mb-5 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                                        <i class="bi bi-puzzle"></i>
+                                    </div>
+                                    <h2 class="h5">Enhances Problem Solving Skills</h2>
+                                    <p class="mb-0">A highly sought after STEM skill is mastery in problem solving. Chess teaches proper planning, foresight, pattern
+                                        recognition, and the role of consequences.
+                                    </p>
+                                </div>
+                                <div class="col mb-5 mb-md-0 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                                        <i class="bi bi-shield-plus"></i>
+                                    </div>
+                                    <h2 class="h5">Recovery</h2>
+                                    <p class="mb-0">Greatly promotes healthy brain growth when recovering from stroke or a disability.</p>
+                                </div>
+                                <div class="col h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                                        <i class="bi bi-lightbulb"></i>
+                                    </div>
+                                    <h2 class="h5">Creativity</h2>
+                                    <p class="mb-0">Many career paths in STEM require two critical skillsets: critical thinking and creativity. Many situations require us to
+                                        have a strong bond between the creative and problem solving sides of our brains.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonial -->
+            <div class="py-5 bg-light">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-10 col-xl-7">
+                            <div class="text-center">
+                                <div class="fs-4 mb-4 fst-italic">
+                                    "When something is working, double down on it! So many people trend away from something
+                                    because they don't like it even though it solves the problem."
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img class="rounded-circle me-3 devin" src="assets/devin.jpg" alt="..." />
+                                    <div class="fw-bold">
+                                        Devin Nakano
+                                        <span class="fw-bold text-primary mx-1">/</span>
+                                        Founder, Y STEM and Chess Inc.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Socials -->
+            <section class="py-5">
+                <div class="container">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-8 col-xl-6">
+                            <div class="text-center">
+                                <h2 class="fw-bolder">
+                                    Keep in Touch
+                                </h2>
+                                <p class="lead fw-normal text-muted mb-5">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque fugit ratione dicta mollitia. Officiis ad.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-5">
 
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
-  </head>
-
-  <body>
-
- <!-- A grey horizontal navbar that becomes vertical on small screens -->
- <nav class="navbar navbar-expand-sm bg-light">
-
-  <!-- Links -->
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 2</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 3</a>
-    </li>
-  </ul>
-
-</nav> 
-
-    <div class="container">
-
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
+                    </div>
+                    <!-- Call to action-->
+                    <aside class="bg-dark rounded-3 p-4 p-sm-5 mt-5">
+                        <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+                            <div class="mb-4 mb-xl-0">
+                                <div class="fs-3 fw-bold text-white">Follow Us on Socials</div>
+                                <i class="bi-facebook footer-icon" style="font-size: 2rem; color: rgb(51, 123, 255);"></i>
+                                <i class="bi-instagram footer-icon" style="font-size: 2rem; color: rgb(212, 0, 212);"></i>
+                                <i class="bi-linkedin footer-icon" style="font-size: 2rem; color: dodgerblue;"></i>
+                                <i class="bi-twitter footer-icon" style="font-size: 2rem; color: rgb(24, 138, 251);"></i>
+                            </div>
+                            <div class="ms-xl-4">
+                                <div class="input-group mb-2">
+                                    <input class="form-control" type="text" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-newsletter" />
+                                    <button class="btn btn-outline-light" id="button-newsletter" type="button">Sign up</button>
+                                </div>
+                                <div class="text-white-50">Sign up for our newsletter for the latest updates.</div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+            <!-- Partners/Sponsors -->
+            <section class="py-5 bg-primary" id="features">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-sm align-items-center justify-content-center text-center">
+                        <h1 class="text-white fw-bolder mb-0">Sponsors</h1>
+                        <br>
+                        <img class="me-3 ventive" src="assets/Ventive.svg" alt="..." />
+                      </div>
+                      <div class="col-sm align-items-center justify-content-center text-center">
+                        <h1 class="fw-bolder mb-0 text-white">Partners</h1>
+                        <div class="row">
+                            <div class="col-sm align-items-center justify-content-center text-center">
+                                <br>
+                                <img class="me-3" src="assets/BoiseDistrictSchools.png" alt="..." />
+                            </div>
+                            <div class="col-sm align-items-center justify-content-center text-center">
+                                <br>
+                                <img class="me-3" src="assets/BoiseRescueMission.png" alt="..." />
+                            </div>
+                            <div class="col-sm align-items-center justify-content-center text-center">
+                                <br>
+                                <img class="me-3" src="assets/BoysAndGirlsClub.png" alt="..." />
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Y STEM and Chess Inc. 2021</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
