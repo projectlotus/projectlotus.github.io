@@ -10897,3 +10897,11 @@ html {
 .ventive {
   transform: scale(0.5);
 }
+
+.play-btn {
+  background-color: dodgerblue;
+  border-radius: 5px;
+  color:white;
+  padding-left:5px;
+  padding-right:5px;
+}
