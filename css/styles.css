@@ -10910,3 +10910,7 @@ html {
   padding-top:30px;
   padding-bottom:30px;
 }
+
+#h1anim {
+  animation-duration: 1.15s;
+}
