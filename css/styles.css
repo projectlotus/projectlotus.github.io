@@ -10878,7 +10878,7 @@ html {
 
 .bg-blue {
   /* background-color: rgb(80, 167, 170) !important; */
-  background-color: #329de6 !important;
+  background-color: #3e95cf !important;
   border-color: white;
 }
 
@@ -10913,4 +10913,18 @@ html {
 
 #h1anim {
   animation-duration: 1.15s;
+}
+
+.bg-green {
+  background-color: rgb(30, 200, 30);
+  color: white;
+}
+
+.bg-blue-dark {
+  background-color: #357d96;
+  color:rgba(255, 255, 255, 0.918);
+}
+
+.clr-white {
+  color: white !important;
 }
